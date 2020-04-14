@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::selection {
+  background: #F6BC00;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  text-align: left;
+  padding-bottom: 300px;
+}
+.misc-stuff {
+  max-width: 600px;
+}
+
+.log-line-container {
+  font-family: SFMono-Regular,Menlo,Consolas,"Liberation Mono",Courier,monospace;
+  min-height: 264px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+.log-line {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+.log-line-number {
+  min-width: 40px;
+  text-align: right;
+  padding: 2.5px 0;
+  cursor: pointer;
+  padding-right: 10px;
+  color: #797777;
+  user-select: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log-line-message {
+  background-color: #0e1e24;
+  color: #fff;
+  flex-grow: 1;
+  padding-left: 20px;
+  display: flex;
+  height: 100%;
+  padding: 2.5px 0;
+  padding-left: 20px;
+}
+.log-line:first-of-type .log-line-message {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.log-line:first-of-type .log-line-message, .log-line:first-of-type .log-line-number {
+  padding-top: 10px;
+}
+.log-line:last-of-type .log-line-message {
+  padding-bottom: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.log-line:hover .log-line-number {
+  background-color: #dad9d9;
+  color: #4a4a4a;
+}
+.log-line:hover .log-line-message {
+  background-color: #444;
+}
+.log-line:first-of-type:hover .log-line-message, .log-line.active:first-of-type .log-line-message {
+  border-top-left-radius: 0;
+}
+.log-line:last-of-type:hover .log-line-message, .log-line.active:last-of-type .log-line-message {
+  border-bottom-left-radius: 0;
+}
+.log-line.active  {
+  background-color: #e6e6e6;
+}
+.log-line.active .log-line-message {
+  background-color: #00AD9F;
+  font-weight: 600;
+}
+.log-line.active:hover .log-line-message {
+  background-color: #00AD9F;
+}
+.log-line.active ::selection {
+  background: #00AD9F;
+}
+.log-line.active.allActive ::selection {
+  background: transparent;
+}
+.log-line.active .log-line-number {
+  color: #4a4a4a;
+  font-weight: 600;
 }

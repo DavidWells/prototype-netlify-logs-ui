@@ -1,0 +1,1372 @@
+{
+"deploy_id": "59ded7b80752d01caeb72085",
+"lines": [
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:20.406623335+00:00",
+"msg": "Build ready to start",
+"phase": "processing",
+"data": {}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:20.997251021Z",
+"msg": "Fetching cached dependencies",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:23.845946882Z",
+"msg": "Starting to download cache of 111.4MB",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"from_cache": "e9cce393a5e53b5e8bea8b45dcbf25a9",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"tarPath": "/mnt/build-work/buildbot-708284964/cache.tar.gz"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:24.721516512Z",
+"msg": "Finished downloading cache in 812.938387ms",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:33.593538077Z",
+"msg": "Preparing Git Reference refs/heads/master",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:34.570062612Z",
+"msg": "Found netlify.toml. Overriding site configuration",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:37.758055947Z",
+"msg": "Using node version 'node' from .nvmrc",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:38.787199745Z",
+"msg": "v8.7.0 is already installed.",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "error"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:39.648512874Z",
+"msg": "Now using node v8.7.0 (npm v5.4.2)",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:39.683258988Z",
+"msg": "Using version v8.7.0 of node",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:39.899607459Z",
+"msg": "Using /opt/buildhome/.rvm/gems/ruby-2.1.2",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:40.629530731Z",
+"msg": "Installing NPM modules using Yarn version 0.18.1",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:41.145652039Z",
+"msg": "yarn install v0.18.1",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:41.362520891Z",
+"msg": "[1/4] Resolving packages...",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:41.904442716Z",
+"msg": "success Already up-to-date.",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:41.905182846Z",
+"msg": "Done in 0.77s.",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:41.911324163Z",
+"msg": "NPM modules installed using Yarn",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:42.714645179Z",
+"msg": "\n> victor-hugo@1.0.0 build /opt/build/repo\n> gulp build",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:43.314864247Z",
+"msg": "[02:47:43]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:43.315802924Z",
+"msg": "Requiring external module babel-register",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:44.768020741Z",
+"msg": "[02:47:44]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:44.768488709Z",
+"msg": "Using gulpfile /opt/build/repo/gulpfile.babel.js",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:44.778375666Z",
+"msg": "[02:47:44]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:44.791263404Z",
+"msg": "[02:47:44]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:44.791368026Z",
+"msg": "Starting 'docs'...",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:45.05222173Z",
+"msg": "✔ /site/content/docs/architecture.md Updated\n Transforms run\n  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/architecture.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:45.310980983Z",
+"msg": "✔ /site/content/docs/editorial-workflow.md Updated\n Transforms run",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:45.311426862Z",
+"msg": "  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/editorial-workflow.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:45.554497089Z",
+"msg": "✔ /site/content/docs/extending.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:45.775294911Z",
+"msg": "✔ /site/content/docs/intro.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:45.775394061Z",
+"msg": " Transforms run\n  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/intro.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.002560948Z",
+"msg": "✔ /site/content/docs/quick-start.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.002767273Z",
+"msg": " Transforms run\n  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/quick-start.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.213285446Z",
+"msg": "✔ /site/content/docs/validation.md Updated\n Transforms run\n  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/validation.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.462573946Z",
+"msg": "✔ /site/content/docs/widgets.md Updated\n Transforms run",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.462731671Z",
+"msg": "  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/widgets.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.788337703Z",
+"msg": "✔ /site/content/docs/contributor-guide.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:46.788495951Z",
+"msg": " Transforms run\n  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/contributor-guide.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.037137002Z",
+"msg": "✔ /site/content/docs/customization.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.297530114Z",
+"msg": "✔ /site/content/docs/test-drive.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.547652146Z",
+"msg": "✔ /site/content/docs/custom-authentication.md Updated",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.547808293Z",
+"msg": " Transforms run",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.547977782Z",
+"msg": "  ⁕ REMOTE:url=https://raw.githubusercontent.com/netlify/netlify-cms/master/docs/custom-authentication.md",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.54807528Z",
+"msg": "all set!",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.548304756Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.596115164Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.596268866Z",
+"msg": "Starting 'fonts'...",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.598357218Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.599410589Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.599507329Z",
+"msg": "Starting 'hugo'...",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.625249959Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.643216326Z",
+"msg": "INFO: 2017/10/12 02:47:47 hugo.go:405: Using config file: /opt/build/repo/site/config.yaml",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.643451649Z",
+"msg": "WARN: 2017/10/12 02:47:47 hugo.go:489: No theme set",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.647572182Z",
+"msg": "Started building sites ...",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.661967039Z",
+"msg": "WARN: 2017/10/12 02:47:47 template_i18n.go:61: No translation bundle found for default language \"en\"",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.680320057Z",
+"msg": "INFO: 2017/10/12 02:47:47 site.go:1489: found taxonomies: map[string]string{\"category\":\"categories\", \"tag\":\"tags\"}",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.680858521Z",
+"msg": "WARN: 2017/10/12 02:47:47 template_i18n.go:44: Translation func for language en not found, use default.",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.682042924Z",
+"msg": "WARN: 2017/10/12 02:47:47 template_i18n.go:44: Translation func for language en not found, use default.",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.687013969Z",
+"msg": "WARN: 2017/10/12 02:47:47 template_i18n.go:44: Translation func for language en not found, use default.",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.775711226Z",
+"msg": "Built site for language en:",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.77588388Z",
+"msg": "0 draft content",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.775966832Z",
+"msg": "0 future content",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.776136171Z",
+"msg": "0 expired content",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.776591059Z",
+"msg": "0 categories created",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.781644071Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.78174216Z",
+"msg": "Finished 'hugo' after 182 ms",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.792924185Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.793093115Z",
+"msg": "[webpack] Hash: \u001b[1m6a8b6c8ed8574842cca3\u001b[22m\nVersion: webpack \u001b[1m1.14.0\u001b[22m\nTime: \u001b[1m208\u001b[22mms\n \u001b[1mAsset\u001b[22m     \u001b[1mSize\u001b[22m  \u001b[1mChunks\u001b[22m  \u001b[1m\u001b[22m           \u001b[1mChunk Names\u001b[22m\n\u001b[1m\u001b[32mapp.js\u001b[39m\u001b[22m  5.24 kB       \u001b[1m0\u001b[22m  \u001b[1m\u001b[32m[emitted]\u001b[39m\u001b[22m  app\nchunk    {\u001b[1m\u001b[33m0\u001b[39m\u001b[22m} \u001b[1m\u001b[32mapp.js\u001b[39m\u001b[22m (app) 3.67 kB\u001b[1m\u001b[32m [rendered]\u001b[39m\u001b[22m\n    [0] \u001b[1mmulti app\u001b[22m 28 bytes {\u001b[1m\u001b[33m0\u001b[39m\u001b[22m}\u001b[1m\u001b[32m [built]\u001b[39m\u001b[22m\n    [1] \u001b[1m./src/js/app.js\u001b[22m 3.64 kB {\u001b[1m\u001b[33m0\u001b[39m\u001b[22m}\u001b[1m\u001b[32m [built]\u001b[39m\u001b[22m",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:47.793204166Z",
+"msg": "[02:47:47]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.005657288Z",
+"msg": "[02:47:48]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.007413435Z",
+"msg": "[02:47:48]",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.007715008Z",
+"msg": "Finished 'images' after 409 ms",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.708958089Z",
+"msg": "Cached NPM modules",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.710857339Z",
+"msg": "Saved Yarn cache",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"docker": true,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www",
+"stream": "out"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.964018286Z",
+"msg": "Build complete: exit code: 0",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"error": null,
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:48.964086456Z",
+"msg": "Cleaning up docker container",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"container_id": "b05ee71beaa7ff094ff54c0add4a11235877c006cf6b6c61709d717bddd93322",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:49.199246414Z",
+"msg": "Starting to deploy site from 'dist'",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"path": "dist",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:49.19941335Z",
+"msg": "Deploying to CDN",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"path": "/mnt/build-work/buildbot-708284964/repo/dist",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:49.691014517Z",
+"msg": "Finished deploying in 491.696383ms",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:49.754146898Z",
+"msg": "Cleaning up the repository",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:49.901178293+00:00",
+"msg": "Starting post processing",
+"phase": "processing",
+"data": {}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:49.997135687+00:00",
+"msg": "Post processing done",
+"phase": "processing",
+"data": {}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:50.282935944+00:00",
+"msg": "Site is live",
+"phase": "processing",
+"data": {}
+},
+{
+"site_id": "e369d639-07e4-4fba-aac4-1cc9b00112b1",
+"deploy_id": "59ded7b80752d01caeb72085",
+"build_id": "59ded7b80752d01caeb72084",
+"time": "2017-10-12T02:47:50.298766436Z",
+"msg": "Bundling and saving cache",
+"phase": "",
+"data": {
+"client": true,
+"consumer": "build-3",
+"level": "info",
+"repo": "git@github.com:netlify/netlify-cms-www"
+}
+}
+]
+}
