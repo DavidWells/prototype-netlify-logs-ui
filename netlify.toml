@@ -1,5 +1,5 @@
 [build]
-  publish = "public"
+  publish = "build"
   command = "npm run build"
 
 # SPA rule. Always redirect any request to our index.html
