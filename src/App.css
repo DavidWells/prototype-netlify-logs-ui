@@ -145,9 +145,15 @@ p {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 0px;
+  }
   .github-corner svg {
     height: 60px;
     width: 60px;
+  }
+  .logs-actions {
+    display: none;
   }
 }
 
