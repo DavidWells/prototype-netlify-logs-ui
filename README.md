@@ -2,7 +2,6 @@
 
 Improvements to netlify logs
 
-
 ## User Stories
 
 ### Linkable Log lines
@@ -45,3 +44,5 @@ As a Netlify user, I'd like to know exactly what went wrong in my build from the
 Possible solution:
 
 - Add linked link to where error was raised
+
+![image](https://user-images.githubusercontent.com/532272/79358121-b2cba800-7ef5-11ea-8103-58bd3df0ca9e.png)

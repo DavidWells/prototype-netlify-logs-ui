@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'xreact'
+import React, { useEffect, useState } from 'react'
 import logData from './data/logs.json'
 import './App.css'
 
