@@ -2,32 +2,6 @@ import React, { useEffect, useState } from 'react'
 import logData from './data/logs.json'
 import './App.css'
 
-function getStartAndEnd() {
-  const params = parseHash(window.location.hash)
-  return getLineNumbersFromHash(params)
-}
-
-function selectText(containerid) {
-  if (document.selection) { // IE
-    const range = document.body.createTextRange()
-    range.moveToElementText(document.getElementById(containerid));
-    range.select();
-  } else if (window.getSelection) {
-    const range = document.createRange()
-    range.selectNode(document.getElementById(containerid));
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-  }
-}
-
-function clearSelection() {
-  if (window.getSelection) {
-    window.getSelection().removeAllRanges()
-  } else if (document.selection) {
-    document.selection.empty()
-  }
-}
-
 export default function App() {
   const [ logLines, setLogLines ] = useState([])
   const [ linePositions, setLinePosition ] = useState(getStartAndEnd())
@@ -95,7 +69,8 @@ export default function App() {
         <h1>Linkable Log Lines</h1>
       </header>
       <div className="misc-stuff">
-        <p>Below is a demonstration of how users can select line numbers & share with colleagues.</p>
+        <p>Below is a demonstration of how users can select one or many log lines & share with colleagues. Click a line number below to see it in action.</p>
+        <p>To select multiple rows, hold shift & click.</p>
         <p>When log links with line numbers are visited, users will automatically scroll to the correct number when logs have finished loading.</p>
       </div>
       <div className='logs-wrapper'>
@@ -131,6 +106,32 @@ function LogLines({ lines, handleRowSelection, selected }) {
       {renderLines}
     </div>
   )
+}
+
+function getStartAndEnd() {
+  const params = parseHash(window.location.hash)
+  return getLineNumbersFromHash(params)
+}
+
+function selectText(containerid) {
+  if (document.selection) { // IE
+    const range = document.body.createTextRange()
+    range.moveToElementText(document.getElementById(containerid));
+    range.select();
+  } else if (window.getSelection) {
+    const range = document.createRange()
+    range.selectNode(document.getElementById(containerid));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+  }
+}
+
+function clearSelection() {
+  if (window.getSelection) {
+    window.getSelection().removeAllRanges()
+  } else if (document.selection) {
+    document.selection.empty()
+  }
 }
 
 // Because URLSearchParams not fully supported https://caniuse.com/#feat=urlsearchparams
