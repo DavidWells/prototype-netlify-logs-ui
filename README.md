@@ -37,3 +37,11 @@ Solution in place:
 
 - Click to copy button
 - "command + A" to select all & right click copy
+
+## Improved build fail notifications
+
+As a Netlify user, I'd like to know exactly what went wrong in my build from the notification.
+
+Possible solution:
+
+- Add linked link to where error was raised
