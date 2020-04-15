@@ -8,7 +8,7 @@ Improvements to netlify logs
 
 As a Netlify user, I'd like to be able to share direct links to log lines to assist in debugging my builds.
 
-Solution in place:
+Possible solution:
 
 - Clicking on a log line selects the row and updates the URL with the log line number creating a shareable link
 
@@ -16,7 +16,7 @@ Solution in place:
 
 As a Netlify user, I'd like to able to link to entire blocks of the build log to aid in faster debugging, sharing with support, and asking colleagues questions about different parts of our build process
 
-Solution in place:
+Possible solution:
 
 - By selecting a line, then holding shift and clicking another line, the range of rows will be selected and the URL hash will update to reflect the current rows selected.
 
@@ -24,7 +24,7 @@ Solution in place:
 
 As a Netlify user, I'd like to easily deselect highlighted log lines.
 
-Solution in place:
+Possible solution:
 
 - Pressing the "esc" escape key will deselect any selected log lines & clear out the line numbers from the URL hash.
 
@@ -32,14 +32,14 @@ Solution in place:
 
 As a Netlify user, I'd like to easily select my log output without dragging to select text.
 
-Solution in place:
+Possible solution:
 
 - Click to copy button
 - "command + A" to select all & right click copy
 
 ## Improved build fail notifications
 
-As a Netlify user, I'd like to know exactly what went wrong in my build from the notification.
+As a Netlify user, I'd like to know exactly what went wrong in my build from the notification sent to my email/slack/etc.
 
 Possible solution:
 
