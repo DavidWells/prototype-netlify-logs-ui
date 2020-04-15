@@ -12,6 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+p {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
 ::selection {
   background: #F6BC00;
 }
@@ -19,11 +25,22 @@ code {
 .app {
   text-align: left;
   padding-bottom: 300px;
+  padding: 0 20px;
 }
 .misc-stuff {
   max-width: 600px;
 }
 
+.logs-header {
+  display: flex;
+  align-items: center;
+}
+.logs-actions {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .log-line-container {
   font-family: SFMono-Regular,Menlo,Consolas,"Liberation Mono",Courier,monospace;
   min-height: 264px;

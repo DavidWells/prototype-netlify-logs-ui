@@ -51,9 +51,13 @@ export default function App() {
     /* Shift key is being held, handle multi line select */
     if (e.shiftKey) {
       const [ currentStart ] = linePositions
-      const newOrder = [currentStart, Number(lineNum)].sort(ascending)
+      const newOrder = [currentStart, Number(lineNum)]
+        // remove empty rows
+        .filter((val) => hasValue(val))
+        // Sort by numerical order
+        .sort(ascending)
       setLinePosition(newOrder)
-      const hashRange = newOrder.map((line) => `L${line}`)
+      const hashRange = newOrder.filter((line) => line).map((line) => `L${line}`)
       updateHashParams(`#${hashRange.join('-')}`)
       return false
     }
@@ -69,12 +73,24 @@ export default function App() {
         <h1>Linkable Log Lines</h1>
       </header>
       <div className="misc-stuff">
-        <p>Below is a demonstration of how users can select one or many log lines & share with colleagues. Click a line number below to see it in action.</p>
-        <p>To select multiple rows, hold shift & click.</p>
-        <p>When log links with line numbers are visited, users will automatically scroll to the correct number when logs have finished loading.</p>
+        <p>Below is a demonstration of how users can select one or many log lines & share the log links with colleagues.
+          When these links are visited, users will automatically scroll to the correct number when logs have finished loading.
+        </p>
+        <p>Click a line number below & the URL will update with the log line number to share!</p>
+        <p>To select multiple rows, click a row, hold the "shift" key & then click another row.</p>
+        <p>To deselect rows, hit the "esc" key.</p>
+        <p>To select all rows, hit the "command + A" keys.</p>
       </div>
       <div className='logs-wrapper'>
-        <h2>Logs</h2>
+        <div className='logs-header'>
+          <h2>Deploy Log</h2>
+          <div className='logs-actions'>
+            <button onClick={notInDemo}>Click to copy...</button>
+            <button onClick={notInDemo}>Click to download...</button>
+            <button onClick={notInDemo}>Scroll to bottom</button>
+            <button onClick={notInDemo}>Scroll to top</button>
+          </div>
+        </div>
         <LogLines lines={logLines} selected={linePositions} handleRowSelection={handleRowSelection} />
       </div>
     </div>
@@ -86,10 +102,13 @@ function LogLines({ lines, handleRowSelection, selected }) {
     return <div>Loading....</div>
   }
   const [ start, end ] = selected
+  const startValue = (hasValue(start)) ? start : end
+  const endValue = (end) ? end : start
+  const activeRowRange = getRange(startValue, endValue)
+  const allActiveClass = ((activeRowRange.length - 1) === lines.length ) ? ' allActive ' : ''
+
   const renderLines = lines.map((line, i) => {
-    const activeRange = range(start, (end || start))
-    const activeClass = (activeRange.includes(i)) ? ' active ' : ''
-    const allActiveClass = ((activeRange.length - 1) === lines.length ) ? ' allActive ' : ''
+    const activeClass = (activeRowRange.includes(i)) ? ' active ' : ''
     return (
       <div key={i} id={`L${i}`} className={`log-line${activeClass}${allActiveClass}`}>
         <div data-line-num={i} className='log-line-number' onClick={handleRowSelection}>
@@ -106,6 +125,14 @@ function LogLines({ lines, handleRowSelection, selected }) {
       {renderLines}
     </div>
   )
+}
+
+function hasValue(value) {
+  return value || value === 0
+}
+
+function notInDemo() {
+  alert('Not in this demo 😃')
 }
 
 function getStartAndEnd() {
@@ -151,7 +178,6 @@ function getLineNumbersFromHash(params) {
     if (acc.length) return acc
     if (key.match(IS_LINE_PARAM)) {
       const matches = key.match(LINE_REGEX)
-      console.log('matches', matches)
       return matches
     }
     return acc
@@ -166,7 +192,7 @@ function getLineNumbersFromHash(params) {
 const ascending = (a, b) => a - b
 
 /* Generate range array from 2 numbers */
-function range(start, end) {
+function getRange(start, end) {
   if ((start || start === 0) || (end || end === 0)) {
     return Array.apply(null, Array((end - start) + 1)).map((_, index) => index + start)
   }
