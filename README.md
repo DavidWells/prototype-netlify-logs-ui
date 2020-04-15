@@ -1,8 +1,12 @@
-# Netlify Logs UI
+# Netlify Build Log Enhancements
 
-Improvements to netlify logs
+This repo is a demo of some Netlify deploy log improvements.
+
+DX for the win!
 
 ## User Stories
+
+Below are some user stories to illustrate some user needs to improve and enhance the build debugging experience.
 
 ### Linkable Log lines
 
@@ -37,7 +41,11 @@ Possible solution:
 - Click to copy button
 - "command + A" to select all & right click copy
 
-## Improved build fail notifications
+## Future improvements
+
+Below are additional improvements that can be made to the logging experience.
+
+### Improved build fail notifications
 
 As a Netlify user, I'd like to know exactly what went wrong in my build from the notification sent to my email/slack/etc.
 
